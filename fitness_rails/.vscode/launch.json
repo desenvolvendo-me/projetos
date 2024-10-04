@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "ruby-debug",
+            "request": "launch",
+            "name": "RSpec (Active File)",
+            "program": "rspec",
+            "programArgs": [
+                "-I",
+                "${workspaceFolder}",
+                "${file}"
+            ],
+            "useBundler": false
+        },
+        {
+            "type": "ruby-debug",
+            "request": "launch",
+            "name": "Rails",
+            "program": "${workspaceFolder}/bin/rails",
+            "programArgs": [
+                "s"
+            ],
+            "useBundler": true
+        }
+    ]
+}
